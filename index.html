@@ -15,25 +15,25 @@ font-family:Arial,sans-serif;
 
 body{
 background:#f5f5f5;
-color:#222;
+color:#333;
 }
 
 .hero{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:white;
-text-align:center;
+background:linear-gradient(135deg,#0b1f4d,#102d73);
 padding:60px 20px;
+text-align:center;
+color:white;
 }
 
 .hero img{
-max-width:400px;
-width:100%;
+width:320px;
+max-width:90%;
 margin-bottom:20px;
 }
 
 .hero h1{
-font-size:42px;
-margin-bottom:15px;
+font-size:48px;
+margin-bottom:10px;
 }
 
 .hero p{
@@ -44,8 +44,8 @@ opacity:0.9;
 .btn{
 display:inline-block;
 margin-top:25px;
-padding:14px 28px;
-background:#f97316;
+padding:15px 30px;
+background:#f7931e;
 color:white;
 text-decoration:none;
 border-radius:8px;
@@ -53,45 +53,67 @@ font-weight:bold;
 }
 
 .section{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
-padding:60px 20px;
+padding:70px 20px;
+}
+
+.section h2{
+text-align:center;
+font-size:40px;
+margin-bottom:20px;
+color:#0b1f4d;
+}
+
+.section p{
+text-align:center;
+font-size:20px;
+max-width:800px;
+margin:auto;
 }
 
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
+margin-top:50px;
 }
 
 .card{
 background:white;
-padding:25px;
+padding:30px;
 border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
 }
 
 .card h3{
-color:#f97316;
+color:#f7931e;
 margin-bottom:10px;
 }
 
 .contact{
-background:#0f172a;
+background:#0b1f4d;
 color:white;
 text-align:center;
-padding:60px 20px;
+padding:70px 20px;
 }
 
 .contact h2{
-margin-bottom:15px;
+font-size:40px;
+margin-bottom:20px;
+}
+
+.contact p{
+margin:10px 0;
+font-size:18px;
 }
 
 footer{
-background:#111827;
+background:#08142f;
 color:white;
-text-align:center;
 padding:20px;
+text-align:center;
 }
 </style>
 
@@ -99,21 +121,30 @@ padding:20px;
 <body>
 
 <section class="hero">
-<img src="logo.png" alt="LyftHem">
+
+<img src="logo.png" alt="LyftHem Logo">
+
 <h1>LyftHem Bygg & Service</h1>
-<p>Trygga bygg- och servicetjänster för hem och företag</p>
+
+<p>Trygga bygg- och servicelösningar för hem och företag</p>
+
 <a href="#kontakt" class="btn">Begär offert</a>
+
 </section>
 
 <section class="section">
-<h2 style="text-align:center;margin-bottom:40px;">
-Våra tjänster
-</h2>
+
+<h2>Vi hjälper dig hemma</h2>
+
+<p>
+Professionella tjänster inom bygg, målning,
+renovering, altanbyggen, montering och hemservice.
+</p>
 
 <div class="services">
 
 <div class="card">
-<h3>Altaner</h3>
+<h3>Altanbygge</h3>
 <p>Byggnation och renovering av altaner.</p>
 </div>
 
@@ -124,23 +155,42 @@ Våra tjänster
 
 <div class="card">
 <h3>Montering</h3>
-<p>Möbler, kök och diverse montage.</p>
+<p>Möbel- och köksmontering.</p>
 </div>
 
 <div class="card">
-<h3>Service</h3>
-<p>Smårenoveringar och praktisk hjälp i hemmet.</p>
+<h3>Renovering</h3>
+<p>Små och stora renoveringsprojekt.</p>
+</div>
+
+<div class="card">
+<h3>Hemservice</h3>
+<p>Praktisk hjälp och service i hemmet.</p>
+</div>
+
+<div class="card">
+<h3>Företagsservice</h3>
+<p>Lösningar för företag och fastigheter.</p>
 </div>
 
 </div>
+
 </section>
 
-<section id="kontakt" class="contact">
+<section class="contact" id="kontakt">
+
 <h2>Kontakta oss</h2>
-<p>Mail: info@lyfthem.se</p>
-<p>Telefon: 070-719 04 41</p>
-<br>
-<a href="mailto:info@lyfthem.se" class="btn">Skicka offertförfrågan</a>
+
+<p>📞 070-719 04 41</p>
+
+<p>✉️ info@lyfthem.se</p>
+
+<p>Svar inom 24 timmar</p>
+
+<a class="btn" href="mailto:info@lyfthem.se">
+Skicka offertförfrågan
+</a>
+
 </section>
 
 <footer>
