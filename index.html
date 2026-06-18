@@ -4,59 +4,148 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LyftHem Bygg & Service</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f5f5f5;color:#333}
-header{background:#0d1b3d;color:white;text-align:center;padding:40px 20px}
-.logo{max-width:400px;width:100%;margin-bottom:20px}
-.hero{padding:60px 20px;text-align:center;background:white}
-.hero h1{font-size:48px;color:#0d1b3d;margin-bottom:20px}
-.hero p{font-size:20px;max-width:800px;margin:auto}
-.services{padding:60px 20px;text-align:center}
-.services h2{margin-bottom:30px;color:#0d1b3d}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:1100px;margin:auto}
-.card{background:white;padding:30px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
-.contact{background:#0d1b3d;color:white;padding:60px 20px;text-align:center}
-form{max-width:600px;margin:auto}
-input,textarea{width:100%;padding:15px;margin:10px 0;border:none;border-radius:5px}
-button{background:#f7941d;color:white;border:none;padding:15px 30px;border-radius:5px}
-footer{text-align:center;padding:20px;background:#08112a;color:white}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#222;
+}
+
+.hero{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.hero img{
+max-width:400px;
+width:100%;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.9;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 28px;
+background:#f97316;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+color:#f97316;
+margin-bottom:10px;
+}
+
+.contact{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.contact h2{
+margin-bottom:15px;
+}
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+}
 </style>
+
 </head>
 <body>
-<header>
-<h1>LyftHem Bygg & Service</h1>
-<p>Bygg • Renovering • Montering • Hemservice</p>
-</header>
 
 <section class="hero">
-<h1>Vi hjälper dig hemma</h1>
-<p>Professionella tjänster inom bygg, målning, montering, altanbyggen, renoveringar och hemservice.</p>
+<img src="logo.png" alt="LyftHem">
+<h1>LyftHem Bygg & Service</h1>
+<p>Trygga bygg- och servicetjänster för hem och företag</p>
+<a href="#kontakt" class="btn">Begär offert</a>
 </section>
 
-<section class="services">
-<h2>Våra tjänster</h2>
-<div class="grid">
-<div class="card"><h3>Altanbygge</h3></div>
-<div class="card"><h3>Målning</h3></div>
-<div class="card"><h3>Montering</h3></div>
-<div class="card"><h3>Renovering</h3></div>
-<div class="card"><h3>Hemservice</h3></div>
+<section class="section">
+<h2 style="text-align:center;margin-bottom:40px;">
+Våra tjänster
+</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Altaner</h3>
+<p>Byggnation och renovering av altaner.</p>
+</div>
+
+<div class="card">
+<h3>Målning</h3>
+<p>Invändig och utvändig målning.</p>
+</div>
+
+<div class="card">
+<h3>Montering</h3>
+<p>Möbler, kök och diverse montage.</p>
+</div>
+
+<div class="card">
+<h3>Service</h3>
+<p>Smårenoveringar och praktisk hjälp i hemmet.</p>
+</div>
+
 </div>
 </section>
 
-<section class="contact">
-<h2>Begär offert</h2>
-<form name="lyfthem-offert" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="lyfthem-offert">
-<input type="text" name="namn" placeholder="Ditt namn">
-<input type="email" name="email" placeholder="Din e-post">
-<textarea name="meddelande" rows="5" placeholder="Beskriv ditt projekt"></textarea>
-<button type="submit">Skicka offertförfrågan</button>
-</form>
-<p style="margin-top:20px">info@lyfthem.se</p>
+<section id="kontakt" class="contact">
+<h2>Kontakta oss</h2>
+<p>Mail: info@lyfthem.se</p>
+<p>Telefon: 070-719 04 41</p>
+<br>
+<a href="mailto:info@lyfthem.se" class="btn">Skicka offertförfrågan</a>
 </section>
 
-<footer>© LyftHem Bygg & Service</footer>
+<footer>
+© 2026 LyftHem Bygg & Service
+</footer>
+
 </body>
 </html>
